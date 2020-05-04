@@ -2,7 +2,6 @@ import { IQuiz, calculateResult, resetQuiz  } from './quiz.js';
 import { startDiv, setupQuizDisplay, IQuizDisplay, loadQuestion, resultsDiv } from './components.js';
 
 export const newGame = (quizs : IQuiz[]) => {
-    console.log("nowa gra...");
     const container = document.createElement('div') as HTMLDivElement;
     container.setAttribute('class', 'gameContainer');
     loadQuizs(quizs, container);
@@ -49,7 +48,7 @@ const startQuiz =  (quiz : IQuiz, container : HTMLDivElement, quizs : IQuiz[]) =
     var quizDisplay = setupQuizDisplay(quiz) as IQuizDisplay;
     const div = quizDisplay.container;
     quizDisplay.endBtn.onclick = () => {
-        loadQuestion(quizDisplay, 0); // żeby sięczas naliczył
+        loadQuestion(quizDisplay, 0); // żeby się czas naliczył
         calculateResult(quizDisplay.quiz);
         endQuiz(quiz, container, quizs);
     }

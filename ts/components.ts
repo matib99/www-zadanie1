@@ -2,7 +2,7 @@ import { IQuestion, IQuiz, checkIfEverythingDone, calculateResult } from './quiz
 
 var timer : number;
 
-export interface IQuizDisplay { // zmienić to na jakąś inną nazwę
+export interface IQuizDisplay { 
     quiz: IQuiz;
     container: HTMLDivElement;
     introduction: HTMLParagraphElement;
