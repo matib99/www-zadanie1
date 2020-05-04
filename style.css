@@ -1,0 +1,153 @@
+body {
+    font: 1vw "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: cornflowerblue;
+    color: rgb(26, 12, 0);
+    text-align: center;
+}
+
+.container {
+    font-size: 1vw;
+    margin: auto;
+    align-content: center;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 1em;
+}
+
+button {
+    background-color: rgb(64, 64, 64);;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 10px;
+    border-radius: 5px;
+    width: 9em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.rulesP,
+.resultsDiv,
+.quizDiv,
+.startDiv {
+    color: rgb(26, 12, 0);
+    background-color: cornsilk;
+    margin: 20px;
+    border-radius: 0.5em;
+    padding: 10px 30px;
+}
+
+
+.questionContent,
+.resultsP,
+.startName {
+    font-size: 2em;
+}
+
+.quizIntroduction,
+.startIntroduction {
+    font-size: 1.5em;
+}
+
+button:disabled {
+    background-color: rgb(128, 128, 128);
+}
+
+.startButton {
+    background-color: darkseagreen;
+}
+
+.endButton {
+    background-color: darkseagreen;
+    width: 12em;
+    align-self: center;
+}
+.backButton,
+.nextButton,
+.prevButton {
+    background-color: cornflowerblue;
+    align-self: center;
+}
+
+.resetButton {
+    background-color: palevioletred;
+    align-self: center;
+}
+
+.resetButton:hover {
+    background-color: rgb(173, 68, 95);
+}
+
+.startButton:hover,
+.endButton:hover {
+    background-color: rgb(106, 163, 104);
+}
+.backButton:hover,
+.nextButton:hover,
+.prevButton:hover {
+    background-color: rgb(62, 81, 189);
+}
+
+button:disabled:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.questionResultDivCorrect,
+.questionResultDivWrong {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    border-radius: 0.25em;
+    min-width: 20em;
+}
+
+
+.questionResultDivCorrect {
+    background-color: darkseagreen;
+}
+
+.questionResultDivWrong {
+    background-color: palevioletred;
+}
+
+.answerInput {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: rgb(160, 149, 231);
+    border-radius: 0.25em;
+    border-style: none;
+    width: 20em;
+    align-self: center;
+}
+
+.answerInput:focus {
+    outline: none;
+}
+
+.quizDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 1200px) {  
+    .container {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {  
+    .container {
+        font-size: 2.5vw;
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "outDir": "../js",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "module": "ES2020",
+      "target": "ES2020",
+      "allowJs": true,
+      "esModuleInterop": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["ES7", "ES2020",  "dom"],
+    }
+  }
